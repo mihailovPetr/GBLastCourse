@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidStudioProjects/GBLastCourse/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/GBLastCourse/app/src/main/res/drawable/ic_car_24.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/GBLastCourse/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/GBLastCourse/app/src/main/res/layout/motion_07_keyframe.xml" value="0.20380434782608695" />
       </map>
     </option>
   </component>
