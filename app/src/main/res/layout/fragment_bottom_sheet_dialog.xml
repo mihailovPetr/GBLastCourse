@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomSheetConstraintLayout">
+
+
+        <TextView
+            android:id="@+id/markerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/marker_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/markerNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/markerName"
+            app:layout_constraintTop_toBottomOf="@id/markerName" />
+
+        <TextView
+            android:id="@+id/markerDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/marker_description"
+            app:layout_constraintStart_toStartOf="@id/markerNameET"
+            app:layout_constraintTop_toBottomOf="@id/markerNameET" />
+
+        <EditText
+            android:id="@+id/markerDescriptionET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/markerDescription"
+            app:layout_constraintTop_toBottomOf="@id/markerDescription" />
+
+        <TextView
+            android:id="@+id/markerCoordinates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/marker_coordinates"
+            app:layout_constraintStart_toStartOf="@id/markerDescriptionET"
+            app:layout_constraintTop_toBottomOf="@id/markerDescriptionET" />
+
+        <TextView
+            android:id="@+id/markerLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/markerCoordinates"
+            app:layout_constraintTop_toBottomOf="@id/markerCoordinates" />
+
+        <TextView
+            android:id="@+id/markerLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/markerLatitude"
+            app:layout_constraintTop_toBottomOf="@id/markerCoordinates" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/ok"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/markerLongitude" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/cancel"
+            app:layout_constraintStart_toEndOf="@id/ok"
+            app:layout_constraintTop_toBottomOf="@id/markerLongitude" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/includedLoadingLayout"
+        layout="@layout/loading_layout" />
+</FrameLayout>

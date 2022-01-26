@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">GBLastCourse</string>
+    <string name="marker_start">Start</string>
+    <string name="error">Error</string>
+    <string name="reload">Reload</string>
+    <string name="dialog_title_no_gps">Geolocation access denied</string>
+    <string name="dialog_message_no_gps">Grant access to geolocation</string>
+    <string name="dialog_title_gps_turned_off">GPS отключен</string>
+    <string name="dialog_message_last_location_unknown">Location unknown. Turn on GPS if you want to get your current location</string>
+    <string name="dialog_message_last_known_location">The last known location is shown. Turn on GPS if you want to update your location</string>
+    <string name="dialog_rationale_title">Geolocation access</string>
+    <string name="dialog_rationale_meaasge">Explanation</string>
+    <string name="dialog_rationale_give_access">Grant access</string>
+    <string name="dialog_rationale_decline">No</string>
+    <string name="marker_name">Name:</string>
+    <string name="marker_description">Description:</string>
+    <string name="marker_coordinates">Coordinates:</string>
+    <string name="menu_title_markers">Markers</string>
+    <string name="marker_lat">lat.:</string>
+    <string name="marker_long">long.:</string>
 </resources>
