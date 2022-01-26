@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/start"
+        app:duration="5000"
+        app:motionInterpolator="linear">
+        <OnClick app:targetId="@id/car" />
+        <OnSwipe
+            app:dragDirection="dragRight"
+            app:touchAnchorId="@+id/car"
+            app:touchAnchorSide="right" />
+
+        <KeyFrameSet>
+            <KeyPosition
+                app:motionTarget="@+id/car"
+                app:framePosition="15"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.9"
+                app:percentY="0.2" />
+
+            <KeyPosition
+                app:motionTarget="@+id/car"
+                app:framePosition="30"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.3"
+                app:percentY="0.35" />
+
+            <KeyPosition
+                app:motionTarget="@+id/car"
+                app:framePosition="45"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.85"
+                app:percentY="0.45" />
+
+            <KeyPosition
+                app:motionTarget="@+id/car"
+                app:framePosition="60"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.1"
+                app:percentY="0.60" />
+
+            <KeyPosition
+                app:motionTarget="@+id/car"
+                app:framePosition="75"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.8"
+                app:percentY="0.70" />
+
+            <KeyPosition
+                app:motionTarget="@+id/car"
+                app:framePosition="89"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.05"
+                app:percentY="0.93" />
+
+
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/car"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@id/car"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        </Constraint>
+    </ConstraintSet>
+
+</MotionScene>
